@@ -96,6 +96,7 @@ venv.bak/
 .settings/
 .ptp-sync/
 app/.ptp-sync-folder
+app/static/.ptp-sync-folder
 app/templates/.ptp-sync-folder
 
 # Spyder project settings

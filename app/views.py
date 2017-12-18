@@ -49,3 +49,7 @@ def hello_name(user):
 def result():
    dict = {'phy':50,'che':60,'maths':70}
    return render_template('result.html', result = dict)
+
+@app.route('/say_hello')
+def say_hello():
+   return render_template('say_hello.html')

@@ -1,0 +1,10 @@
+<!-- say_hello.html-->
+{% extends "base.html" %}
+{% block title %}Say Hello{% endblock %}
+{% block body %}
+<div class="jumbotron">
+  <h1>Javascript Example Page</h1>
+  <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+</div>
+<script type = "text/javascript" src = "{{ url_for('static', filename = 'hello.js') }}" ></script>
+{% endblock %}
