@@ -1,12 +1,9 @@
 # views.py
 
 from flask import Flask, redirect, url_for, request, render_template
-import subprocess
-
 app = Flask(__name__)
 
 from app import app
-
 
 @app.route('/')
 def index():
@@ -65,16 +62,6 @@ def result():
 @app.route('/say_hello')
 def say_hello():
    return render_template('say_hello.html')
-
-
-@app.route('/date')
-def cli():
-    try:
-        cmd = subprocess.check_output(['date'])
-    except subprocess.CalledProcessError as e:
-        return "An error occurred({0}: {1}".format(e.returncode, e.output)
-
-    return 'Date: %s' % cmd
 
 @app.route('/watson_nlc')
 def watson_nlc():
