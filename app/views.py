@@ -30,7 +30,7 @@ def hello_user(name):
 
 @app.route('/success/<name>')
 def success(name):
-   return 'Welcome %s' % name
+   return render_template('success.html', name = name)
 
 @app.route('/login', methods = ['POST', 'GET'])
 def login():
