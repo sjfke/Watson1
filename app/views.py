@@ -63,6 +63,7 @@ def result():
 def say_hello():
    return render_template('say_hello.html')
 
+
 @app.route('/watson_nlc')
 def watson_nlc():
     
@@ -72,7 +73,7 @@ def watson_nlc():
 
     from ConfigParser import SafeConfigParser
     config = SafeConfigParser()
-    config.read('config.ini')
+    config.read('/etc/watson_cfg.ini')
 
     natural_language_understanding = NaturalLanguageUnderstandingV1(
         username=config.get('watson', 'username'),
