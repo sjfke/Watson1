@@ -1,17 +1,18 @@
-<!doctype html>
-<html>
-   <body>
-   
-      <table border = 1>
-         {% for key, value in result.iteritems() %}
-         
-            <tr>
-               <th> {{ key }} </th>
-               <td> {{ value }} </td>
-            </tr>
-            
-         {% endfor %}
-      </table>
-      
-   </body>
-</html>
+<!-- result.html-->
+{% extends "base.html" %}
+{% block title %}Result{% endblock %}
+{% block body %}
+<div class="jumbotron">
+	<h1>Result Page</h1>
+	<table class="table">
+		{% for key, value in result.iteritems() %}
+
+		<tr>
+			<th>{{ key }}</th>
+			<td>{{ value }}</td>
+		</tr>
+
+		{% endfor %}
+	</table>
+</div>
+{% endblock %}
