@@ -38,8 +38,8 @@ def login():
       user = request.form['nm']
       return redirect(url_for('success', name = user))
    else:
-      user = request.args.get('nm', '')
-      return redirect(url_for('success', name = user))
+      # user = request.args.get('nm', '')
+      return render_template('login.html')
   
 @app.route('/hello/<user>')
 def hello_name(user):
