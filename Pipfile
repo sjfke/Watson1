@@ -1,0 +1,33 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+asn1crypto = {version="*"}
+certifi = {version="*"}
+cffi = {version="*"}
+chardet = {version="*"}
+click = {version="*"}
+cryptography = {version="*"}
+enum34 = {version="*"}
+idna = {version="*"}
+ipaddress = {version="*"}
+itsdangerous = {version="*"}
+pycparser = {version="*"}
+pysolr = {version="*"}
+python-dateutil = {version="*"}
+requests = {version="*"}
+six = {version="*"}
+urllib3 = {version="*"}
+watson-developer-cloud = {version="*"}
+Flask = {version="*"}
+Jinja2 = {version="*"}
+MarkupSafe = {version="*"}
+pyOpenSSL = {version="*"}
+Werkzeug = {version="*"}
+
+[requires]
+python_version = "3.7"
