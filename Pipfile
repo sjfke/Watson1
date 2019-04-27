@@ -21,7 +21,7 @@ pysolr = {version="*"}
 python-dateutil = {version="*"}
 requests = {version="*"}
 six = {version="*"}
-urllib3 = {version="*"}
+urllib3 = {version = ">=1.24.2"}
 watson-developer-cloud = {version="*"}
 Flask = {version="*"}
 Jinja2 = {version="*"}
